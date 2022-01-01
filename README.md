@@ -3,7 +3,13 @@ A index for tex-math commands
 
 ## Install
 
-Manually put this file at ``~/.config/nvim/``
+### For vim-plug
+
+```
+Plug 'Cassin01/tindex.vim'
+```
+
+### Manually put the csv file at ``~/.config/nvim/``
 
 The file name is ``latex_commands.csv``
 
@@ -71,11 +77,6 @@ Command, Description
 "mathcal" ,  "カリグラフィフォント"
 ```
 
-For vim-plug
-
-```
-Plug 'Cassin01/tindex.vim'
-```
 
 ## Usage
 
