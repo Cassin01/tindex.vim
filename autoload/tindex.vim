@@ -57,7 +57,6 @@ function! vim_tindex#tindex_init()
     command! TexCommands :call s:m_math_glossary()
     nnoremap <silent> ,t :TexCommands<CR>
     " }}}
-
 endfunction
 
 let &cpo = s:save_cpo
