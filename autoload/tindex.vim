@@ -9,7 +9,7 @@ endif
 let s:save_cpo = &cpo
 set cpo&vim
 
-function! vim_tindex#tindex_init()
+function! tindex#tindex_init()
     echo "hell"
     " " a note using floating window {{{
     " "TODO:タブでカーソル移動できるようにする．

@@ -13,7 +13,7 @@ set cpo&vim
 
 augroup entercmd
   autocmd!
-  autocmd VimEnter * call vim-tindex#tindex_init()
+  autocmd VimEnter * call tindex#tindex_init()
 augroup END
 
 " 退避していたユーザ設定を戻す
