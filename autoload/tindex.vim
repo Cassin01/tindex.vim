@@ -14,7 +14,6 @@ function! s:parser10(txt) " 作りかけ
 endfunction
 
 function! tindex#tindex_init()
-  let g:tindex#index_path = '~/.config/nvim/latex_commands.csv'
 endfunction
 
 " reft10(iter:入力値, ret:返り値)
@@ -46,7 +45,11 @@ endfunction
 
 function! tindex#m_math_glossary()
     let buf = nvim_create_buf(v:false, v:true)
-    call nvim_buf_set_lines(buf, 0, 0, v:true, map(readfile(glob(g:tindex#index_path)), {_, a->substitute(a, '"', '', 'g')}) ) 
+    if has(g:tindex#index_path)
+      call nvim_buf_set_lines(buf, 0, 0, v:true, map(readfile(glob('~/.config/nvim/latex_commands.csv')), {_, a->substitute(a, '"', '', 'g')}) )
+    else
+      call nvim_buf_set_lines(buf, 0, 0, v:true, map(readfile(glob(g:tindex#index_path)), {_, a->substitute(a, '"', '', 'g')}) )
+    endif
     let opts = {'relative': 'cursor', 'width': 30, 'height': 15, 'col': 0,
                 \ 'row': 1, 'anchor': 'NW', 'style': 'minimal'}
     let win = nvim_open_win(buf, 1, opts)
