@@ -16,7 +16,8 @@ function! s:parser10(txt) " 作りかけ
 endfunction
 
 function! tindex#tindex_init()
-  call s:m_math_glossary()
+    command! TexCommands :call s:m_math_glossary()
+    nnoremap <silent> ,t :TexCommands<CR>
 endfunction
 
 " reft10(iter:入力値, ret:返り値)
