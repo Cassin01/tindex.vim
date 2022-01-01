@@ -91,7 +91,7 @@ On the latex-math-index
 
 ``,t`` for the selecting the word that u want insert in ur text.
 
-## configuration
+## Configuration
 
 ```vim
 " csv path
