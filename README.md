@@ -1,5 +1,5 @@
 # tindex.vim
-A index for tex-math commands
+A index for tex-math commands.
 
 ## Install
 
@@ -11,7 +11,7 @@ Plug 'Cassin01/tindex.vim'
 
 ### Manually put the csv file at ``~/.config/nvim/``
 
-The file name is ``latex_commands.csv``
+The file name is ``latex_commands.csv``.
 
 
 ```latex_commands.csv
@@ -80,10 +80,10 @@ Command, Description
 
 ## Usage
 
-Normal mode
+On Normal mode
 
-``,t`` for entering the latex-math-index
+``,t`` for entering the latex-math-index.
 
 On the latex-math-index
 
-``,t`` for the selecting the word that u want insert in your text.
+``,t`` for the selecting the word that u want insert in ur text.
