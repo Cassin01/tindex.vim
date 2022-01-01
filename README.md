@@ -90,3 +90,10 @@ On Normal mode
 On the latex-math-index
 
 ``,t`` for the selecting the word that u want insert in ur text.
+
+## configuration
+
+```vim
+" csv path
+let g:tindex#index_path = '~/.config/nvim/init/main/latex_commands.csv'
+```
