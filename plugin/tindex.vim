@@ -1,10 +1,10 @@
 scriptencoding utf-8
 
 " 二度読み込むことを防ぐ
-if exists('g:loaded_neoline')
+if exists('g:loaded_tindex')
   finish
 else
-  let g:loaded_neoline = 1
+  let g:loaded_tindex = 1
 endif
 
 " ユーザ設定を一時退避
