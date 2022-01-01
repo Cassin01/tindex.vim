@@ -7,6 +7,9 @@ A index for tex-math commands.
 
 ```vim
 Plug 'Cassin01/tindex.vim'
+command! TexCommands :call tindex#m_math_glossary()
+nnoremap <silent> ,t :TexCommands<CR>
+
 ```
 
 ### Manually put the csv file at ``~/.config/nvim/``.

@@ -14,8 +14,7 @@ function! s:parser10(txt) " 作りかけ
 endfunction
 
 function! tindex#tindex_init()
-    command! TexCommands :call s:m_math_glossary()
-    nnoremap <silent> ,t :TexCommands<CR>
+
 endfunction
 
 " reft10(iter:入力値, ret:返り値)
@@ -45,7 +44,7 @@ function! s:t20_exit_buf()
     execute "normal! a" . ctext . "\<Esc>"
 endfunction
 
-function! s:m_math_glossary()
+function! tindex#m_math_glossary()
     let buf = nvim_create_buf(v:false, v:true)
     call nvim_buf_set_lines(buf, 0, 0, v:true, map(readfile(glob('~/.config/nvim/latex_commands.csv')), {_, a->substitute(a, '"', '', 'g')}) ) 
     let opts = {'relative': 'cursor', 'width': 30, 'height': 15, 'col': 0,
