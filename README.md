@@ -5,7 +5,7 @@ A index for tex-math commands.
 
 ### For vim-plug
 
-```
+```vim
 Plug 'Cassin01/tindex.vim'
 ```
 
@@ -14,7 +14,7 @@ Plug 'Cassin01/tindex.vim'
 The file name is ``latex_commands.csv``.
 
 
-```latex_commands.csv
+```csv
 Command, Description
 "mathbb{R}",     "ℝ"
 "mathbb{z}",     "ℤ"
