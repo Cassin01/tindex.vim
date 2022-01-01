@@ -9,7 +9,7 @@ A index for tex-math commands.
 Plug 'Cassin01/tindex.vim'
 ```
 
-### Manually put the csv file at ``~/.config/nvim/``
+### Manually put the csv file at ``~/.config/nvim/``.
 
 The file name is ``latex_commands.csv``.
 
