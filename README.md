@@ -9,13 +9,10 @@ A index for tex-math commands.
 Plug 'Cassin01/tindex.vim'
 command! TexCommands :call tindex#m_math_glossary()
 nnoremap <silent> ,t :TexCommands<CR>
-
+let g:tindex#index_path = '~/.config/nvim/latex_commands.csv'
 ```
 
-### Manually put the csv file at ``~/.config/nvim/``.
-
-The file name is ``latex_commands.csv``.
-
+### Manually put the csv file at ``g:tindex#index_path``.
 
 ```csv
 Command, Description
@@ -90,10 +87,3 @@ On Normal mode
 On the latex-math-index
 
 ``,t`` for the selecting the word that u want insert in ur text.
-
-## Configuration
-
-```vim
-" csv path
-let g:tindex#index_path = '~/.config/nvim/init/main/latex_commands.csv'
-```
