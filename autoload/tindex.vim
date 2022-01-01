@@ -10,7 +10,8 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 function! tindex#tindex_init()
-    echo "hell"
+    let s:hoe = 0
+endfunction
     " " a note using floating window {{{
     " "TODO:タブでカーソル移動できるようにする．
     " function! s:parser10(txt) " 作りかけ
@@ -58,7 +59,6 @@ function! tindex#tindex_init()
     " command! TexCommands :call s:m_math_glossary()
     " nnoremap <silent> ,t :TexCommands<CR>
     " " }}}
-endfunction
 
 let &cpo = s:save_cpo
 unlet s:save_cpo
